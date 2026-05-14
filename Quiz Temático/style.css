@@ -1,0 +1,150 @@
+body{
+    background-image: url(imagens/wallpaper.jpg);
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: Mario;
+    overflow-y: hidden;
+}
+
+@font-face {
+    font-family: Mario;
+    src: url(fontes/super_mario_256/SuperMario256.ttf);
+}
+@font-face {
+    font-family: 'Minecraft';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Minecraft'), url('https://fonts.cdnfonts.com/s/36662/MinecraftTen-VGORe.woff') format('woff');
+}
+
+#container{
+    width: 1300px;
+    height: 650px;
+    text-align: center;
+    
+    display: flex;
+    justify-content: space-between;
+}
+
+.container1{
+    width: 75%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container2{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+h1{
+    font-family: Mario, sans-serif;
+    font-size: 60px;
+    background: linear-gradient(to bottom, #e52521 0%, #fbd000 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#pergunta{
+    font-size: 26px;
+}
+
+.pergunta{
+    width: 100%;
+    height: 50px;
+    width: 700px;
+    background: #f5f5f5;
+    border: 5px solid #1d1d4f;
+    border-radius: 0px 0px 40px 0px;
+    padding: 25px;
+    position: relative;
+    font-size: 18px;
+    box-shadow: 
+    10px 10px 0px #5c5cff,
+    15px 15px 0px #1d1d4f;
+    display: flex;
+    align-items: center;
+}
+
+#respostas{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#imagem{
+    max-width: 700px;
+    height: 400px;
+    margin-bottom: 25px;
+}
+
+#botao, #botaoJogarNovamente{
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    background-color: #f2f2f2;
+    color: black;
+    border: 4px solid #1d1d4f;
+    border-radius: 0px 0px 20px 0px;
+    font-family: Minecraft;
+}
+
+#botao:active{
+    transform: scale(0.9);
+}
+
+#botaoResposta{
+    width: 500px;
+    padding: 20px;
+    font-size: 26px;
+    background-color: #f2f2f2;
+    color: black;
+    border: 4px solid #1d1d4f;
+    border-radius: 0px 0px 20px 0px;
+    font-family: Mario;
+    cursor: pointer;
+    transition: 0.2s;
+    margin: 10px;
+}
+
+#botaoResposta:hover{
+    transform:scale(1.1);
+}
+
+.resultado{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.container3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    top: 30%;
+    left: 40%;
+}
+
+#pontos{
+    font-size: 30px;
+}
+
+#tituloFinal{
+    font-size: 45px;
+}
