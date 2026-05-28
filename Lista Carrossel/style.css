@@ -1,0 +1,53 @@
+body{
+    text-align: center;
+}
+
+button{
+    width: 30px;
+    height: 30px;
+    border-radius: 360px;
+    background: none;
+}
+
+.Ex1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.img{
+    width: 400px;
+    display: none;
+}
+
+.ativa{
+    display: block;
+}
+
+.dpreco{
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Ex2 */
+.Ex2{
+    display: flex;
+    justify-content: center;
+}
+
+.carrossel1{
+    width: 400px;
+}
+
+.img1{
+    width: 100%; 
+    display: none;
+}
+
+.ativa1{
+    display: block;
+}
