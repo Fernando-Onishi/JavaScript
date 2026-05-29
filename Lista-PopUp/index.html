@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PopUp</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Exercício 1</h1>
+        <button onclick="abrirPopUp()">Abrir Pop-Up</button>    
+        <div class="PopUp1" id="PopUp1">
+            <div class="conteudo">
+                <h1>Login</h1>
+                <input type="text" id="usuario" placeholder="Seu email..">
+                <input type="password" id="senha" placeholder="Sua senha..">
+                <button onclick="entrar()">Entrar</button>
+            </div>
+        </div>
+
+        <hr>
+
+        <h1>Exercício 2</h1>
+        <button onclick="abrirPopUp1()">Abrir Pop-Up</button>
+        <div class="PopUp1" id="PopUp2">
+            <div class="conteudo">
+                <h1>Deseja realmente excluir este item?</h1>
+                <div class="botoes">
+                    <button onclick="botaoNao()" id="botaoNao">Não</button>
+                    <button onclick="botaoSim()" id="botaoSim">Sim</button>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <h1>Exercício 3</h1>
+        <img src="img/2.jpg" id="img">
+        <div class="PopUp1" id="PopUp3">
+            <div class="conteudo">
+                <img src="img/2.jpg" id="imgAtiva">
+            </div>
+        </div>
+
+        <hr>
+
+        <h1>Exercício 4</h1>
+        <button onclick="abrirPopUp2()">Curiosidade</button>
+        <div class="PopUp1" id="PopUp4">
+            <div class="conteudo">
+                <h1>Curiosidade</h1>
+                <p>A primeira linguagem de programação de alto nível: Foi o Fortran, criada pela IBM em 1957.</p>
+                <button onclick="fechar()" id="fechar">X</button>
+            </div>
+        </div>
+
+        <hr>
+
+        <h1>Exercício 5</h1>
+        <button onclick="abrirPopUp3()">Abrir Pop-Up</button>
+        <div class="PopUp1" id="PopUp5">
+            <div class="conteudo">
+                <h1>Login</h1>
+                <input type="password" id="senha1" placeholder="Sua senha..">
+                <button onclick="resultado()">Enviar</button>
+            </div>
+        </div>
+        <div class="PopUp1" id="PopUpAcerto">
+            <div class="conteudo">
+                <h1>Parabéns</h1>
+                <h2>Você acertou a senha</h2>
+                <button onclick="fechar1()" id="fechar">X</button>
+            </div>
+        </div>
+        <div class="PopUp1" id="PopUpErrou">
+            <div class="conteudo">
+                <h1>:(</h1>
+                <p>Você errou a senha</p>
+                <button onclick="tenteNovamente()" id="tenteNovamente">Tente novamente</button>
+            </div>
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
